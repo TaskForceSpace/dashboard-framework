@@ -1,6 +1,6 @@
 <template>
 	<section class="sidenavview">
-		<SideNavigation v-if="!props.hideNav" :logo="props.logo">
+		<SideNavigation v-if="!props.hideNav" :logo="props.logo" :version="props.version">
 			<slot name="sidenavitems"></slot>
 		</SideNavigation>
 		<div class="sidenavview__content" :class="{ 'hide-nav': props.hideNav }">
@@ -18,6 +18,10 @@ const props = defineProps({
 		default: false
 	},
 	logo: {
+		type: String,
+		default: null
+	},
+	version: {
 		type: String,
 		default: null
 	}

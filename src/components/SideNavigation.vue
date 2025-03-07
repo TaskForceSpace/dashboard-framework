@@ -10,7 +10,7 @@
 		</div>
 
 		<div class="navigation__footer">
-			<span>V0.1.0</span>
+			<p v-if="props.version" class="navigation__footer--version">{{ props.version }}</p>
 		</div>
 	</nav>
 
@@ -18,8 +18,14 @@
 </template>
 
 <script setup>
+import { version } from 'vue';
+
 const props = defineProps({
 	logo: {
+		type: String,
+		default: null
+	},
+	version: {
 		type: String,
 		default: null
 	}
@@ -59,6 +65,15 @@ const props = defineProps({
 		justify-content: flex-start;
 		align-items: start;
 		margin: 10px;
+		height: 100%;
+	}
+
+	&__footer {
+		&--version {
+			text-align: center;
+			font-size: 0.8rem;
+			color: #666;
+		}
 	}
 }
 </style>

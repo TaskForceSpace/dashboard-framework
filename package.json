@@ -1,6 +1,6 @@
 {
-  "name": "light-dashboard",
-  "version": "0.1.0",
+  "name": "dashboard-framework",
+  "version": "0.1.1",
   "description": "VueJS ready to use Dashboard",
   "main": "index.js",
   "module": "index.js",
