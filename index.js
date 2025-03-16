@@ -12,6 +12,7 @@ import SideNavigation from "./src/components/SideNavigation.vue";
 
 // Views
 import SideNavView from "./src/views/SideNavView.vue";
+import LoginView from "./src/views/LoginView.vue";
 
 export {
 	Input,
@@ -20,11 +21,12 @@ export {
 	InfoContainer,
 	InfoRow,
 	SideNavigation,
-	SideNavView,
 	HeaderEditor,
 	HeaderData,
 	FormField,
-	FormContainer
+	FormContainer,
+	SideNavView,
+	LoginView
 };
 
 export default {
@@ -34,10 +36,12 @@ export default {
 		app.component("SideNavigation", SideNavigation);
 		app.component("Header", Header);
 		app.component("HeaderEditor", HeaderEditor);
-		app.component("SideNavView", SideNavView);
 		app.component("FormContainer", FormContainer);
 		app.component("FormField", FormField);
 		app.component("InfoContainer", InfoContainer);
 		app.component("InfoRow", InfoRow);
+
+		app.component("SideNavView", SideNavView);
+		app.component("LoginView", LoginView);
 	}
 }

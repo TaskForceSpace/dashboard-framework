@@ -30,7 +30,10 @@ const props = defineProps({
 
 <style scoped lang="scss">
 .sidenavview {
+	height: 100%;
+
 	&__content {
+		height: 100%;
 		margin-left: 250px;
 
 		&.hide-nav {
