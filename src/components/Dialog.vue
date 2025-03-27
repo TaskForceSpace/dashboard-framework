@@ -38,6 +38,9 @@ const props = defineProps({
 	}
 })
 
+const isShow = ref(false)
+const emit = defineEmits(['update:show']);
+
 watch(() => props.show, (newVal) => {
 	isShow.value = newVal;
 	if (newVal) {
@@ -48,10 +51,6 @@ watch(() => props.show, (newVal) => {
 		document.body.style.overflow = '';
 	}
 });
-
-const isShow = ref(false)
-
-const emit = defineEmits(['update:show']);
 
 function end() {
 	document.body.style.overflow = '';
@@ -77,7 +76,7 @@ onMounted(
 	left: 0;
 	width: 100%;
 	height: 100%;
-	z-index: 9999;
+	z-index: 999;
 
 	&__container {
 		background-color: #fff;

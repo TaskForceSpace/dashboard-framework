@@ -1,6 +1,6 @@
 {
   "name": "dashboard-framework",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "VueJS ready to use Dashboard",
   "main": "index.js",
   "module": "index.js",
