@@ -6,7 +6,7 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, watch } from 'vue'
 
 const props = defineProps({
 	label: {
@@ -26,8 +26,7 @@ const props = defineProps({
 		default: ''
 	}
 })
-
-const value = ref();
+const value = ref(props.modelValue);
 const emit = defineEmits(['update:modelValue'])
 
 function updateValue(event) {
